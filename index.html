@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacho Corsini - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="img/fotoperfil.jpg" alt="Foto de perfil" class="profile-img">
+                <h1>IGNACIO ANDRES CORSINI</h1>
+                <h2>FrontEnd Developer</h2>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/nachocorsini" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/NachoCorsini" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/nacho.corsini" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about">
+        <div class="container">
+            <h3>Sobre Mí</h3>
+            <p>
+                Soy estudiante avanzado de la Tecnicatura en Programación en la Universidad Tecnológica Nacional (UTN),
+                donde mi pasión por el aprendizaje y el crecimiento profesional se manifiesta en mi enfoque entusiasta y
+                proactivo. Destaco por mi responsabilidad y disciplina, cualidades que se ven potenciadas por mi
+                capacidad para colaborar eficazmente en equipo, facilitando un intercambio de ideas y conocimientos.
+                Aunque todavía no cuento con experiencia laboral, estoy altamente motivado para adentrarme en el
+                dinámico campo de la programación y avanzar en mi trayectoria profesional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills">
+        <div class="container">
+            <h3>Habilidades</h3>
+            <div class="skills-grid">
+                <!-- Habilidades -->
+                <div class="skill">
+                    <img src="img/html.png" alt="HTML" class="skill-icon">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="img/css.png" alt="CSS" class="skill-icon">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="img/js.png" alt="JavaScript" class="skill-icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="img/sqlS.png" alt="SQL" class="skill-icon">
+                    <p>SQL</p>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/96/000000/c-sharp-logo.png" alt="C#" class="skill-icon">
+                    <p>C#</p>
+                </div>
+                <div class="skill">
+                    <img src="https://codeopinion.com/wp-content/uploads/2017/06/Bitmap-MEDIUM_ASP.NET-Core-MVC-Logo_2colors_Square_Boxed_RGB.png"
+                        alt="ASP.NET MVC" class="skill-icon">
+                    <p>ASP.NET MVC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección Idiomas -->
+    <section id="languages">
+        <div class="container">
+            <h3>Idiomas</h3>
+            <div class="language-list">
+                <div class="language">
+                    <img src="https://flagcdn.com/es.svg" alt="Español">
+                    <p>Español (Nativo)</p>
+                </div>
+                <div class="language">
+                    <img src="https://flagcdn.com/gb.svg" alt="Inglés">
+                    <p>Inglés (Intermedio)</p>
+                </div>
+                <div class="language">
+                    <img src="https://flagcdn.com/it.svg" alt="Italiano">
+                    <p>Italiano (A1)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section id="contact">
+        <div class="contact-box">
+            <form action="https://formspree.io/f/mdkkpknp" method="POST" id="contact-form">
+                <label for="name">Tu Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Tu Correo:</label>
+                <input type="email" id="email" name="_replyto" required>
+    
+                <label for="message">Tu Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer id="footer"></footer>
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,214 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la pantalla */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #ffd700;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffd700;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffd700;
+}
+
+/* Sección Sobre Mí */
+#about {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Sección Habilidades */
+#skills {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1rem;
+    color: #ffd700;
+}
+
+/* Sección Idiomas */
+#languages {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.language-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+}
+
+.language img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Formulario de contacto */
+/* Formulario de contacto */
+.contact-box {
+    padding: 20px; /* Agrega padding al contenedor del formulario */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo ligeramente oscuro para contrastar con los inputs */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+    margin: 20px auto; /* Centra el formulario con margen superior e inferior */
+    max-width: 600px; /* Limita el ancho máximo del formulario */
+}
+
+/* Inputs y textarea */
+.contact-box input,
+.contact-box textarea {
+    padding: 12px;
+    margin-bottom: 20px; /* Añade espacio entre los campos */
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+/* Placeholder */
+.contact-box input::placeholder,
+.contact-box textarea::placeholder {
+    color: #aaa; /* Color gris para el placeholder */
+}
+
+/* Para el botón */
+.contact-box button {
+    padding: 12px;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.contact-box button:hover {
+    background-color: #e0a800;
+}
+
+/* Ajusta el espaciado del formulario para evitar que esté pegado al footer */
+.contact-box {
+    margin-bottom: 70px; /* Añade un margen inferior para que el formulario no esté pegado al footer */
+}
+
+
+/* Estilo para el footer */
+#footer {
+    background-color: rgba(0, 0, 0, 0.2);  /* Fondo transparente como el de la página */
+    height: 50px;  /* Ajusta el tamaño del footer */
+    width: 100%;
+    position: relative;  /* Esto hace que se mantenga en el flujo normal del documento */
+    margin-top: 50px;  /* Espacio entre el formulario y el footer */
+    text-align: center;
+    color: white;
+}
+
+/* Ajusta el espaciado del formulario para evitar que esté pegado al footer */
+.contact-box {
+    margin-bottom: 70px; /* Añade un margen inferior para que el formulario no esté pegado al footer */
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+        font-size: 1rem;
+    }
+}
